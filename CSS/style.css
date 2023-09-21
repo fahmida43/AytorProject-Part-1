@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Open+Sans:wght@400;800&family=Roboto:wght@400;700&display=swap');
+/* common css starts here*/
+
+:root{
+    --primaryFont:'Josefin Sans', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+    --mainColor: #FF6F61;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none ;
+
+}
+
+a {
+    text-decoration:none;
+}
+
+h1,h2,h3,h4,h5,h6,ul,p,span,ol{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--primaryFont);
+
+}
+/* common css ends here */
+
+/**-------**-------**/
+/* Theme Name : AYTOR E-commerce website
+   Theme Author : Fahmida Jannat
+   Developer URI : Github Link
+*/
+
+/** ---- Table of Context ----**/
+/** 
+* 1. HOME
+        *navbar
+        *hero section (banner)
+        *service
+**/
+/** ---Homepage starts here--- **/ 
+
+/* navbar css starts */
+
+.sm_navbar .iconsGroup li,
+.myCustomNav .iconsGroup li{
+    display: inline-block ;
+}
+
+.sm_navbar .iconsGroup li span,
+.sm_navbar .iconsGroup li a,
+.myCustomNav .iconsGroup li span,
+.myCustomNav .iconsGroup li a{
+    color: #151A32;
+    margin: 0 10px;
+    position: relative;
+    font-size: 24px;
+
+}
+
+.sm_navbar .iconsGroup li a span.cartNumber,
+.myCustomNav .iconsGroup li a span.cartNumber{
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 50% ;
+    width: 15px;
+    height: 15px;
+    display: block;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    top: -5px;
+    right: -17px;
+    font-size: 14px;
+
+
+}
+
+.myCustomNav #navMenu ul li a{
+    padding: 37px 22px;
+    color: #11161E;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    line-height: 26px;
+    transition: 0.25s;
+}
+
+.myCustomNav #navMenu ul li:hover a{
+    color: var(--mainColor);
+
+}
+
+.sm_navbar .menu button{
+    border: none;
+    font-size: 24px;
+    background-color: white;
+}
+
+.sm_navbar .smMenu ul li a{
+    color: #11161E;
+    padding: 15px 10px;
+    display: block;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.smMenu ul li:last-child a{
+    border: none;
+}
+
+/* navbar css ends */
+
+/* banner css starts here */
+
+#banner .slide {
+    height: 800px;
+    
+}
+
+#banner .slide h5{
+    color: #1D1D1D;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+#banner .slide h1 {
+    color: #1D1D1D;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    margin: 14px 0 16px;
+    transition-delay: 0.2s;
+}
+#banner .slide p{
+    color: #1D1D1D;
+    font-family: var(--secondaryFont);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    transition-delay: 0.3s;
+}
+#banner .slide a{
+    background-color: var(--mainColor);
+    margin-top: 29px;
+    color: var(--Comon-Colot, #FFF);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 13px 37px;
+    display: inline-block;
+    transition: .7s;
+    transition-delay: 0.4s;
+
+}
+.slide a span{
+    padding: 23px 0 23px 10px;
+}
+.slide a:hover{
+    background-color: #a0180c;
+}
+
+#banner .slide *{
+    transform: translateY(80px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s ease-in;
+}
+#banner .slide.slick-active *{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+
+}
+
+#banner .bannerDots{
+    position: absolute;
+    bottom: 24%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#banner .bannerDots li{
+    display: inline-block;
+}
+#banner .bannerDots li button{
+    border: none;
+    color: transparent;
+    width: 11px;
+    height: 6px;
+    border-radius: 5px;
+    background:#fff ;
+    margin-right: 5px;
+    transition: 1s;
+
+}
+
+#banner .bannerDots li.slick-active button{
+    width: 28px;
+    background-color: var(--mainColor);
+}
+
+/* banner css ends here */
+
+/** ---Homepage ends here--- **/ 
+
+
